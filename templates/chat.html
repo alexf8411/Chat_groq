@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interfaz de chat con inteligencia artificial">
+    <title>Chat IA - Conversación</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="chat-page">
+    <div class="container">
+        <header class="chat-header">
+            <h1 class="chat-header__title">Chat con IA</h1>
+            <a href="/index.html" class="button button--secondary">
+                <span class="button__icon">←</span>
+                Volver
+            </a>
+        </header>
+        
+        <main class="chat">
+            <div class="chat__messages" id="chat-messages">
+                <div class="message message--ai">
+                    ¡Hola! ¿En qué puedo ayudarte hoy?
+                </div>
+            </div>
+
+            <div class="chat__status" id="loading">
+                <div class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="chat__input">
+                <textarea 
+                    id="user-input"
+                    class="input-field"
+                    placeholder="Escribe tu mensaje aquí..."
+                    rows="2"
+                    aria-label="Mensaje"
+                ></textarea>
+                <button id="send-button" class="button button--primary">
+                    Enviar
+                </button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/config.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
